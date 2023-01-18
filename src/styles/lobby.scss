@@ -1,0 +1,365 @@
+@font-face {
+    font-family: Fredoka;
+    src: url("../fonts/FredokaOne-Regular.ttf");
+}
+
+    
+
+.Lobby
+{
+    .gameEnd {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #17984861;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .looseAlert {
+            background-color: white;
+                width: 800px;
+                height: 400px;
+                border-radius: 21px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            
+                .Message {
+                    display: flex;
+                    justify-content: center;
+                    font-family: Fredoka;
+                    font-size: 40px;
+                    padding-top: 100px;
+                    color: #ff5f5f;
+                }
+            
+                .backButton {
+                    display: flex;
+                    justify-content: center;
+            
+                    a {
+                        font-family: Fredoka;
+                        color: white;
+                        width: 200px;
+                        height: 60px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: blue;
+                        border-radius: 21px;
+                    }
+                }
+        }
+        .winAlert {
+            background-color: white;
+            width: 800px;
+            height: 400px;
+            border-radius: 21px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            .Message {
+                display: flex;
+                justify-content: center;
+                font-family: Fredoka;
+                font-size: 40px;
+                padding-top: 100px;
+                color: #179848;
+            }
+            .backButton {
+                display: flex;
+                justify-content: center;
+                a {
+                    font-family: Fredoka;
+                    color: white;
+                    width: 200px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: blue;
+                    border-radius: 21px;
+                }
+            }
+        }
+    }
+    
+   
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    .bar
+    {
+        margin-top: 20px;
+        width: 800px;
+        height: 50px;
+        background-color: white;
+        border-radius: 21px;
+        margin-bottom: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+        
+        
+        .Lives {
+            font-family: Fredoka;
+            
+            .bx{
+               font-size: 20px;
+               color: #ff5f5f;
+            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .Level {
+            font-family: Fredoka;
+            .bx {
+                    font-size: 20px;
+                        color: orange;
+                }
+            
+        }
+
+
+
+    }
+    .table
+    {
+        width: 1000px;
+        height: 700px;
+        border-radius: 150px;
+        border: solid white 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .playerIn {
+
+            //background-color: grey;
+            width: 250px;
+            height: 200px;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            font-family: Fe;
+            .userInfo {
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                padding: 5px;
+                color: white;
+                font-size: 15px;
+                border-radius: 13px;
+                padding: 10px;
+                background-color: blue;
+                .username,.cardnumber {
+                    display: flex;
+                    flex-direction: row;
+                    font-family: Fredoka;
+                    align-items: center;
+                    .bx {
+                        font-size: 25px;
+                        font-weight: 400
+                        ;
+                    }
+                }
+
+            }
+            .ava {
+                border-radius: 50%;
+                background-color: blue;
+                width: 120px;
+                height: 120px;
+                border: 10px solid white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 50px;
+            }
+        }
+        .fo1 {
+            
+            top: -100px ;
+        }
+        .fo2 {
+            flex-direction: row-reverse;
+            left: -150px;
+        }
+        .fo3 {
+            right: -150px;
+        }
+        .cardsPlaceholder
+        {
+            width: 600px;
+            height: 200px;
+            border: 10px solid white;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        
+    }
+    .myCards
+    {
+        width: 800px;
+        height: 160px;
+        background-color: rgb(213, 208, 208);
+        border-radius: 30px;
+        transform: translateY(-50%);
+        border: 10px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       .container
+       {
+        display:flex ;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        
+       }
+
+
+
+    }
+  
+      
+}
+
+.Wait
+{
+    width: 400px;
+    height: 550px;
+    background-color: white;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 50% 50%  ;
+    grid-template-rows: 46% 46% 8%;
+    .personBox {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .personAva {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            background-color: #d1d9e2;
+            overflow: hidden;
+            position: relative;
+            .alert {
+                position: absolute;
+                width: 100%;
+                height: 30%;
+                bottom: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-family: Fredoka;
+                
+            }
+            .ready {
+                background-color: #179848b4;
+            }
+
+            .notready {
+                background-color: #ff5f5fad;
+            }
+
+        }
+        .personAvanimate {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-name: placeHolderShimmer;
+            animation-timing-function:inherit;
+        }
+        .personName 
+        {
+            border: 1px solid #bdbfc2;
+            padding: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 22px;
+            border-radius: 25px;
+            font-family: Fredoka;
+
+        }
+        .loadingName {
+            width: 50%;
+            height: 100%;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-name: placeHolderShimmer;
+            animation-timing-function: inherit;
+        }
+    }
+    .readyLeave {
+        grid-row: 3/4;
+        grid-column: 1/3;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px;
+        
+        .click {
+            width: 100px;
+            height: 40px;
+            border-radius: 3px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-family: Fredoka;
+        }
+        .leaveBut {
+           
+            background-color: #ff5f5f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .readyBut {
+            background-color: #179848;
+        }
+    }
+}
+.gameEnd {
+
+}
+@keyframes placeHolderShimmer {
+  0% {
+    background-color: #ffff;
+  }
+  50% {
+    background-color: #d1d9e2;
+  }
+  100% {
+    background-color: white;
+  }
+}
+

@@ -1,0 +1,176 @@
+$background: #7557d9;
+$button: #5a3ac9;
+$font: #443084;
+a {
+  text-decoration: none;
+}
+.Error
+{
+  width: fit-content;
+  height: 60px;
+  background-color: #ff5f5f ;
+  padding: 20px;
+  border-radius: 9px;
+  margin-bottom: 20px;
+  color: pink;
+  border: 1px solid pink;
+}
+.Login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  position: relative;
+}
+.welcome {
+  font-size: 35px;
+  color: $font;
+  font-weight: 400;
+  span {
+    font-size: 40px;
+    font-weight: 900;
+  }
+}
+.login {
+
+  width: 100%;
+  min-height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .text {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+
+    span {
+      color: $font;
+      font-weight: 700;
+    }
+  }
+
+  input {
+    padding: 15px;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: 1px solid grey;
+    margin-bottom: 40px;
+    outline: none;
+    color: grey;
+  }
+
+  input:focus {
+    border: $font 2px solid;
+    width: 260px;
+  }
+}
+.buttonL {
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  justify-content: center;
+
+  .log_in {
+    background-color: $button;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    background-color: $button;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+}
+.createAc {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  
+  .linkButt {
+    color: #5a3ac9;
+    cursor: pointer;
+  }
+
+}
+// Loading state style belowe-----------------------------
+.Loading
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .left
+  {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform: translateX(-100%);
+    animation: left 1s forwards;
+    overflow: hidden;
+    position: relative;
+    img {
+        position: absolute;
+        transform: translateX(-5.5%);
+      }
+    
+  }
+  .right
+  {
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    animation: right 1s forwards;
+     transform: translateX(100%);
+    overflow: hidden;
+    img 
+    {
+      position: absolute;
+      transform: translateX(-50%);
+    }
+    
+  }
+  .text_load
+  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+}
+ @keyframes right {
+  
+   50%{
+     transform: translateX(0);
+   }
+   100%{
+     transform: translate(100%);
+   }
+ }
+ @keyframes left {
+
+   50% {
+     transform: translateX(0);
+   }
+
+   100% {
+     transform: translate(-100%);
+   }
+ }

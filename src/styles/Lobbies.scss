@@ -1,0 +1,218 @@
+@font-face {
+    font-family: Fredoka;
+    src: url("../fonts/FredokaOne-Regular.ttf");
+}
+.container {
+    display: flex;
+    
+
+}
+.Lobbies
+{
+    min-height:  calc(100vh - 70px);
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    //padding-top: 20px;
+    .settingsButtons
+    {
+
+        width: 100%;
+        padding: 20px 20px 20px 20px ;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 20px;
+        .butContainer
+        {
+            box-shadow: rgba(234, 21, 220, 0.2) 0px 7px 29px 0px;
+            
+            position: relative;
+            display: flex;
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            background-color: white;
+            border-radius: 50%;
+            
+            .tect {
+               font-family: Fredoka;
+                font-size: 15px;
+                position: absolute;
+                color: #7743DB;
+                right: 15%;
+                top: 33%;
+            }
+            .addLobb {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                box-shadow: rgba(0, 0, 0, 0.2) 1px 7px 29px 1px;
+                cursor: pointer;
+                z-index: 99;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 30px;
+                color: #7743DB;
+                }
+
+        }
+        .butContainer:hover 
+        {
+            width: 200px;
+            border-radius: 30px;
+            
+
+        }
+        
+    }
+    .LobbiesContainer
+    {
+        margin-top: 30px;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: flex-start;
+        gap: 10px;
+        width: 92%;
+        min-height: 600px;
+       
+        .lobbieCart
+        {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            border-radius: 17px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10px;
+            .lobbiename 
+            {
+                
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                color: #7743DB;
+                font-family: Fredoka;
+                .bx{
+                    font-size: 21px;
+                }
+                span{
+                    font-family: Fredoka;
+                    color: black;
+                }
+
+            }
+            .connContainer
+            {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                .connect {
+                        width: 100px;
+                        border-radius: 100px;
+                        color: white;
+                        height: 50px;
+                        background-color: #38E54D;
+                        border: none;
+                        cursor: pointer;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    }
+                    .delete {
+                        width: 50px;
+                        border-radius: 50%;
+                        color: white;
+                        height: 50px;
+                        background-color: #e53838;
+                        border: none;
+                        cursor: pointer;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    }
+            }
+            
+        }
+        flex: 4;
+    }
+    .myLobby
+    {
+        flex: 1;
+        margin-top: 30px;
+        padding: 20px;
+        display: flex;
+        
+        
+        justify-content: flex-start;
+        min-height: 100px;
+        
+        .createMyLobby
+        {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+                
+            background-color: white;
+            border-radius: 25px;
+            width: 100%;
+            height: 400px;
+            .welcome
+            {   
+                display: flex;
+                align-items: center;
+                padding: 15px;
+                font-size: 21px;
+                width: 100%;
+                span{
+                    font-family: Fredoka;
+                    color:#7743DB ;
+                    font-weight: 200;
+                }
+                
+            }
+            
+            form 
+            {
+                display: flex;
+                flex-direction: column;
+                gap : 10px   ;
+                padding : 20px
+            }
+            .num
+            {
+                width: 60px;
+                border-radius: 15px;
+            }
+            form input
+            {
+                width: 210px;
+                height: 40px;
+                padding: 10px;
+                border-radius: 21px;
+                outline: none;
+                border: 1px solid #7743DB;
+            }
+            .submit
+            {
+                margin-top: 100px;
+                width: 100px;
+                border-radius: 13px;
+                color: white;
+                height: 40px;
+                background-color: #38E54D;
+                border: none;
+                cursor: pointer;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+                
+        }
+    }
+}
